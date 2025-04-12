@@ -1,9 +1,9 @@
 pipeline{
-    agent any;
+    agent {label "dev"}
     stages{
         stage("code"){
             steps {
-                git url: "https://github.com/Swayamnakshane/Hackathon_phase1.git" , branch: "swayam_feature"
+                git url: "https://github.com/sahastra16/Hackathon_phase1.git" , branch: "dev"
             }
         }
         stage("build"){
